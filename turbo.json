@@ -13,6 +13,16 @@
     "typecheck": {},
     "test": {
       "dependsOn": ["^build"],
+      "env": [
+        "NODE_ENV",
+        "PORT",
+        "HOST",
+        "LOG_LEVEL",
+        "APP_KEY",
+        "APP_URL",
+        "SESSION_DRIVER",
+        "CORS_ORIGIN"
+      ],
       "outputs": []
     },
     "generate-routes": {
