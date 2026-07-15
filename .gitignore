@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Build output
+build
+dist
+dist-ssr
+.output
+.nitro
+.vinxi
+
+# Tooling
+.turbo
+npm-debug.log*
+yarn-error.log*
+
+# OS / editors
+.DS_Store
+.idea
+.vscode

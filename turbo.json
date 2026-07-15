@@ -1,0 +1,22 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["build/**", "dist/**", ".output/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {},
+    "typecheck": {},
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "generate-routes": {
+      "outputs": ["src/routeTree.gen.ts"]
+    }
+  }
+}
