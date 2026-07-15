@@ -26,6 +26,14 @@ jobs:
   quality:
     name: Quality checks
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: test
+      PORT: 3333
+      HOST: 127.0.0.1
+      LOG_LEVEL: info
+      APP_KEY: github-actions-test-key
+      APP_URL: http://127.0.0.1:3333
+      SESSION_DRIVER: memory
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
